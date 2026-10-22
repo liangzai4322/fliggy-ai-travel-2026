@@ -1,0 +1,351 @@
+{
+  "cliVersion": "1.0.16",
+  "cliPackage": "@fly-ai/flyai-cli",
+  "installedVia": "npm i -g @fly-ai/flyai-cli (pre-approved; runtime had no CLI retained)",
+  "queryTime": "2026-10-22T02:59:28Z",
+  "queryWindowUtc": {
+    "start": "2026-10-22T02:59:28Z",
+    "end": "2026-10-22T02:59:32Z"
+  },
+  "reportGeneratedAtLocal": "2026-10-22 (Asia/Shanghai)",
+  "credentialHandling": "FLYAI_API_KEY injected by runtime and consumed in-process by the official CLI only; never echoed, printed, read into a variable, written to a command string, chat, log, or artifact.",
+  "requirements": {
+    "travellers": "2 adults",
+    "origin": "上海 (Shanghai)",
+    "destination": "三亚 (Sanya)",
+    "departDate": "2026-11-07",
+    "returnDate": "2026-11-10",
+    "nights": 3,
+    "rooms": 1,
+    "preferences": [
+      "直飞优先",
+      "海边散步",
+      "轻松行程"
+    ],
+    "totalBudgetCNY_bothTravellers": 8000,
+    "currency": "CNY",
+    "forbiddenActions": [
+      "transaction",
+      "payment",
+      "account creation",
+      "key creation"
+    ]
+  },
+  "queries": [
+    {
+      "queryId": "outbound-flight",
+      "cliVersion": "1.0.16",
+      "queryTimeUtc": "2026-10-22T02:59:28Z",
+      "finishedAtUtc": "2026-10-22T02:59:29Z",
+      "commandArray": [
+        "flyai",
+        "search-flight",
+        "--origin",
+        "上海",
+        "--destination",
+        "三亚",
+        "--dep-date",
+        "2026-11-07",
+        "--journey-type",
+        "1",
+        "--sort-type",
+        "3"
+      ],
+      "credentialsInCommand": false,
+      "exitCode": 0,
+      "apiStatus": 0,
+      "apiMessage": "success",
+      "systemMessage": null,
+      "resultCount": 10,
+      "stdoutBytes": 9168,
+      "stderrBytes": 0,
+      "stderrRawStored": false,
+      "evidenceFile": "demo-evidence/evidence-outbound-flight.json",
+      "outcome": "success",
+      "kind": "outbound-flight"
+    },
+    {
+      "queryId": "return-flight",
+      "cliVersion": "1.0.16",
+      "queryTimeUtc": "2026-10-22T02:59:29Z",
+      "finishedAtUtc": "2026-10-22T02:59:30Z",
+      "commandArray": [
+        "flyai",
+        "search-flight",
+        "--origin",
+        "三亚",
+        "--destination",
+        "上海",
+        "--dep-date",
+        "2026-11-10",
+        "--journey-type",
+        "1",
+        "--sort-type",
+        "3"
+      ],
+      "credentialsInCommand": false,
+      "exitCode": 0,
+      "apiStatus": 0,
+      "apiMessage": "success",
+      "systemMessage": null,
+      "resultCount": 10,
+      "stdoutBytes": 9182,
+      "stderrBytes": 0,
+      "stderrRawStored": false,
+      "evidenceFile": "demo-evidence/evidence-return-flight.json",
+      "outcome": "success",
+      "kind": "return-flight"
+    },
+    {
+      "queryId": "hotel",
+      "cliVersion": "1.0.16",
+      "queryTimeUtc": "2026-10-22T02:59:30Z",
+      "finishedAtUtc": "2026-10-22T02:59:32Z",
+      "commandArray": [
+        "flyai",
+        "search-hotel",
+        "--dest-name",
+        "三亚",
+        "--check-in-date",
+        "2026-11-07",
+        "--check-out-date",
+        "2026-11-10",
+        "--hotel-stars",
+        "4,5",
+        "--sort",
+        "price_asc",
+        "--max-price",
+        "900"
+      ],
+      "credentialsInCommand": false,
+      "exitCode": 0,
+      "apiStatus": 0,
+      "apiMessage": "success",
+      "systemMessage": null,
+      "resultCount": 10,
+      "stdoutBytes": 5584,
+      "stderrBytes": 0,
+      "stderrRawStored": false,
+      "evidenceFile": "demo-evidence/evidence-hotel.json",
+      "outcome": "success",
+      "kind": "hotel"
+    }
+  ],
+  "topCandidates": {
+    "outboundFlight": [
+      {
+        "flightNo": "MU5375",
+        "airline": "东航",
+        "journeyType": "直达",
+        "cabin": "经济舱",
+        "route": "上海(虹桥) 2026-11-07 16:10:00 -> 三亚(凤凰) 2026-11-07 19:30:00",
+        "totalDurationMinutes": 200,
+        "ticketPriceRaw": "856.00",
+        "ticketPriceCNY": 856.0,
+        "officialJumpUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3qBmgb"
+      },
+      {
+        "flightNo": "MU5397",
+        "airline": "东航",
+        "journeyType": "直达",
+        "cabin": "经济舱",
+        "route": "上海(浦东) 2026-11-07 20:00:00 -> 三亚(凤凰) 2026-11-07 23:30:00",
+        "totalDurationMinutes": 210,
+        "ticketPriceRaw": "862.00",
+        "ticketPriceCNY": 862.0,
+        "officialJumpUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F04N0qI"
+      },
+      {
+        "flightNo": "FM9537",
+        "airline": "上航",
+        "journeyType": "直达",
+        "cabin": "经济舱",
+        "route": "上海(虹桥) 2026-11-07 07:00:00 -> 三亚(凤凰) 2026-11-07 10:10:00",
+        "totalDurationMinutes": 190,
+        "ticketPriceRaw": "884.00",
+        "ticketPriceCNY": 884.0,
+        "officialJumpUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3fUgDw"
+      }
+    ],
+    "returnFlight": [
+      {
+        "flightNo": "HU7321",
+        "airline": "新海航|海南航空",
+        "journeyType": "直达",
+        "cabin": "经济舱",
+        "route": "三亚(凤凰) 2026-11-10 07:20:00 -> 上海(浦东) 2026-11-10 10:30:00",
+        "totalDurationMinutes": 190,
+        "ticketPriceRaw": "330.00",
+        "ticketPriceCNY": 330.0,
+        "officialJumpUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F2CpE61"
+      },
+      {
+        "flightNo": "9C8780",
+        "airline": "春秋",
+        "journeyType": "直达",
+        "cabin": "经济舱",
+        "route": "三亚(凤凰) 2026-11-10 20:50:00 -> 上海(虹桥) 2026-11-10 23:55:00",
+        "totalDurationMinutes": 185,
+        "ticketPriceRaw": "380.00",
+        "ticketPriceCNY": 380.0,
+        "officialJumpUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F34o6kH"
+      },
+      {
+        "flightNo": "FM9536",
+        "airline": "上航",
+        "journeyType": "直达",
+        "cabin": "经济舱",
+        "route": "三亚(凤凰) 2026-11-10 21:20:00 -> 上海(浦东) 2026-11-11 00:25:00",
+        "totalDurationMinutes": 185,
+        "ticketPriceRaw": "484.00",
+        "ticketPriceCNY": 484.0,
+        "officialJumpUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F4C2Wt9"
+      }
+    ],
+    "hotel": [
+      {
+        "name": "慢慢·交个友友民宿（三亚海棠湾国际免税城店）",
+        "starLabel": "高档型",
+        "priceRaw": "¥130",
+        "priceCNY_perRoomPerNight": 130.0,
+        "locationHint": "近三亚国际免税城",
+        "address": "龙海风情小镇L9-9号",
+        "score": null,
+        "scoreDesc": null,
+        "review": null,
+        "shId": "55216047",
+        "officialDetailUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3u6KVf"
+      },
+      {
+        "name": "摩卡时光海景度假公寓(三亚湾椰梦长廊店)",
+        "starLabel": "高档型",
+        "priceRaw": "¥140",
+        "priceCNY_perRoomPerNight": 140.0,
+        "locationHint": "近椰梦长廊",
+        "address": "三亚湾蓝色海岸小区（兰海三期）-，近机场路。",
+        "score": null,
+        "scoreDesc": null,
+        "review": null,
+        "shId": "10047826",
+        "officialDetailUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F41rEUJ"
+      },
+      {
+        "name": "莫言莫语设计师酒店(三亚亚龙湾博后店)",
+        "starLabel": "高档型",
+        "priceRaw": "¥149",
+        "priceCNY_perRoomPerNight": 149.0,
+        "locationHint": "近博后村",
+        "address": "亚龙湾博后村委会新坡三组15号",
+        "score": null,
+        "scoreDesc": null,
+        "review": null,
+        "shId": "60322002",
+        "officialDetailUrl": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F14Rvxj"
+      }
+    ]
+  },
+  "priceSemantics": {
+    "flight": {
+      "field": "ticketPrice",
+      "observed": "string of digits with 2 decimals, no currency symbol, e.g. \"929.00\"",
+      "absentFields": [
+        "adultPrice",
+        "childPrice",
+        "price",
+        "taxBreakdown",
+        "quantity",
+        "baggage",
+        "refundPolicy"
+      ],
+      "interpretation": "read as CNY per adult one-way economy face price; tax/fee inclusion NOT confirmable from response",
+      "bookingStatusClaimed": false
+    },
+    "hotel": {
+      "field": "price",
+      "observed": "string with yuan sign, e.g. \"¥140\"",
+      "absentFields": [
+        "score",
+        "scoreDesc",
+        "review",
+        "rate",
+        "commissionMoneyYuan",
+        "roomType",
+        "bedType",
+        "breakfast",
+        "inventory"
+      ],
+      "interpretation": "read as CNY per room per night (per --max-price docs); 3-night total is a derived estimate, not returned by the API",
+      "bookingStatusClaimed": false
+    },
+    "systemMessage": "null in all three responses (no platform hint returned)"
+  },
+  "planComparison": {
+    "planA_preferred": {
+      "outbound": "MU5377 东航 虹桥13:00→凤凰16:35",
+      "return": "HO1130 吉祥 凤凰17:15→虹桥20:15",
+      "hotel": "摩卡时光海景度假公寓(三亚湾椰梦长廊店) ¥140/间/晚",
+      "flightsCNY_2pax": 2858,
+      "hotelCNY_3nights": 420,
+      "estimatedOtherCNY": {
+        "meals": 1200,
+        "tickets": 300,
+        "localTransport": 400,
+        "contingency": 800
+      },
+      "budgetCapCNY": 8000,
+      "referenceSubtotalCNY": 3278,
+      "referenceTotalCNY": 5978,
+      "referenceHeadroomCNY": 2022,
+      "referenceExceedsBudget": false,
+      "budgetSatisfied": null,
+      "verificationNote": "按单人票价及每间每晚口径推算，税费、人数、房型及库存待核验；不能认定最终预算满足。"
+    },
+    "planB_alternative": {
+      "outbound": "MU5377 东航 虹桥13:00→凤凰16:35",
+      "return": "FM9538 上航 凤凰11:20→虹桥14:25",
+      "hotel": "三亚龙兴莱曼海景度假酒店 ¥268/间/晚",
+      "flightsCNY_2pax": 2852,
+      "hotelCNY_3nights": 804,
+      "estimatedOtherCNY": {
+        "meals": 1200,
+        "tickets": 300,
+        "localTransport": 400,
+        "contingency": 800
+      },
+      "budgetCapCNY": 8000,
+      "referenceSubtotalCNY": 3656,
+      "referenceTotalCNY": 6356,
+      "referenceHeadroomCNY": 1644,
+      "referenceExceedsBudget": false,
+      "budgetSatisfied": null,
+      "verificationNote": "按单人票价及每间每晚口径推算，税费、人数、房型及库存待核验；不能认定最终预算满足。"
+    }
+  },
+  "unverified": [
+    "flight ticketPrice tax/airport-fee inclusion",
+    "seat inventory and bookable status (quantity=null)",
+    "baggage allowance and change/refund rules",
+    "hotel tax/breakfast inclusion, room & bed type, 2-adult occupancy surcharge",
+    "hotel review scores (all null in this response)",
+    "hotel 3-night total (derived as price x 3)",
+    "attraction tickets, meals, local transport, airport transfer (estimated, no search-poi call)",
+    "prices are a 2026-10-22T02:59Z snapshot and may change"
+  ],
+  "artifacts": {
+    "report": "/root/workspace/demo-report.md",
+    "summary": "/root/workspace/demo-summary.json",
+    "evidence": [
+      "/root/workspace/demo-evidence/evidence-outbound-flight.json",
+      "/root/workspace/demo-evidence/evidence-return-flight.json",
+      "/root/workspace/demo-evidence/evidence-hotel.json"
+    ]
+  },
+  "actionsNotTaken": [
+    "booking",
+    "payment",
+    "order creation",
+    "account creation",
+    "API key creation"
+  ],
+  "publicationReview": "派生摘要经来源字段与预算规则复核；原始查询响应保存在 evidence/，未修改。"
+}

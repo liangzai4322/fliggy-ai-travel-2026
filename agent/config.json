@@ -1,0 +1,28 @@
+{
+  "name": "行程有数·预算旅行助手",
+  "description": "根据预算、日期和偏好，调用飞猪真实机票与酒店数据，给出可核验的行程方案和费用拆分。",
+  "modelDisplayName": "Qwen3.8-Flash",
+  "platform": "阿里云百炼 Managed Agent",
+  "multiAgent": false,
+  "systemPromptFile": "system-prompt.md",
+  "skill": {
+    "marketplaceName": "飞猪旅行 V1.0",
+    "upstream": "https://github.com/alibaba-flyai/flyai-skill",
+    "upstreamSkillVersionObserved": "1.0.15",
+    "install": "npx skills add alibaba-flyai/flyai-skill"
+  },
+  "runtimeDependencies": ["Node.js", "npm", "@fly-ai/flyai-cli@1.0.16"],
+  "environmentVariableNames": ["FLYAI_API_KEY"],
+  "builtinTools": {
+    "bash": "ask",
+    "read": "allow",
+    "write": "allow",
+    "edit": "allow",
+    "glob": "allow",
+    "grep": "allow",
+    "web_fetch": "allow",
+    "todo_write": "allow",
+    "mark_artifacts": "allow"
+  },
+  "note": "此文件是可人工复现的配置清单，不是平台官方导入schema。模型标识请在百炼当前界面选择。"
+}

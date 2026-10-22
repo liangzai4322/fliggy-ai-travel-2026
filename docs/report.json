@@ -1,0 +1,195 @@
+{
+  "title": "行程有数",
+  "request": {
+    "origin": "上海",
+    "destination": "三亚",
+    "departure": "2026-11-07",
+    "return": "2026-11-10",
+    "adults": 2,
+    "rooms": 1,
+    "budget": 8000,
+    "hotelMaxNight": 900,
+    "preferences": "直飞优先，海边散步，轻松行程",
+    "estimates": {
+      "food": 1200,
+      "localTransport": 400,
+      "activities": 300,
+      "reserve": 800
+    },
+    "hotelStars": "4,5",
+    "hotelSort": "price_asc",
+    "selection": {
+      "outbound": "MU5377",
+      "return": "HO1130",
+      "hotel": "摩卡时光海景度假公寓(三亚湾椰梦长廊店)"
+    },
+    "aiReportUrl": "https://github.com/liangzai4322/fliggy-ai-travel-2026/blob/main/demo/demo-report.md"
+  },
+  "nights": 3,
+  "groups": {
+    "outbound": {
+      "status": "returned",
+      "time": "2026-10-22T02:59:28Z",
+      "options": [
+        {
+          "name": "MU5377",
+          "price": "929.00",
+          "priceField": "ticketPrice",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3jqjVe",
+          "image": null,
+          "note": "虹桥 2026-11-07 13:00:00 → 凤凰 2026-11-07 16:35:00",
+          "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+        },
+        {
+          "name": "MU5375",
+          "price": "856.00",
+          "priceField": "ticketPrice",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3qBmgb",
+          "image": null,
+          "note": "虹桥 2026-11-07 16:10:00 → 凤凰 2026-11-07 19:30:00",
+          "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+        },
+        {
+          "name": "MU5397",
+          "price": "862.00",
+          "priceField": "ticketPrice",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F04N0qI",
+          "image": null,
+          "note": "浦东 2026-11-07 20:00:00 → 凤凰 2026-11-07 23:30:00",
+          "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+        }
+      ],
+      "selected": {
+        "name": "MU5377",
+        "price": "929.00",
+        "priceField": "ticketPrice",
+        "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3jqjVe",
+        "image": null,
+        "note": "虹桥 2026-11-07 13:00:00 → 凤凰 2026-11-07 16:35:00",
+        "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+      },
+      "platformHint": null,
+      "error": null
+    },
+    "return": {
+      "status": "returned",
+      "time": "2026-10-22T02:59:29Z",
+      "options": [
+        {
+          "name": "HO1130",
+          "price": "500.00",
+          "priceField": "ticketPrice",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F4MdJIt",
+          "image": null,
+          "note": "凤凰 2026-11-10 17:15:00 → 虹桥 2026-11-10 20:15:00",
+          "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+        },
+        {
+          "name": "HU7321",
+          "price": "330.00",
+          "priceField": "ticketPrice",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F2CpE61",
+          "image": null,
+          "note": "凤凰 2026-11-10 07:20:00 → 浦东 2026-11-10 10:30:00",
+          "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+        },
+        {
+          "name": "9C8780",
+          "price": "380.00",
+          "priceField": "ticketPrice",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F34o6kH",
+          "image": null,
+          "note": "凤凰 2026-11-10 20:50:00 → 虹桥 2026-11-10 23:55:00",
+          "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+        }
+      ],
+      "selected": {
+        "name": "HO1130",
+        "price": "500.00",
+        "priceField": "ticketPrice",
+        "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F4MdJIt",
+        "image": null,
+        "note": "凤凰 2026-11-10 17:15:00 → 虹桥 2026-11-10 20:15:00",
+        "unit": "ticketPrice 原值；按人民币单人票价估算，税费、人数口径与库存待核验"
+      },
+      "platformHint": null,
+      "error": null
+    },
+    "hotel": {
+      "status": "returned",
+      "time": "2026-10-22T02:59:30Z",
+      "options": [
+        {
+          "name": "摩卡时光海景度假公寓(三亚湾椰梦长廊店)",
+          "price": "¥140",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F41rEUJ",
+          "image": "https://img.alicdn.com/imgextra/i3/6000000005796/O1CN01awkNxE1sgcgWjAsgw_!!6000000005796-2-hotel.png",
+          "note": "三亚湾蓝色海岸小区（兰海三期）-，近机场路。",
+          "unit": "列表起价；每晚口径按官方文档推算，指定房型/人数/三晚成交价待核验"
+        },
+        {
+          "name": "慢慢·交个友友民宿（三亚海棠湾国际免税城店）",
+          "price": "¥130",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F3u6KVf",
+          "image": "https://img.alicdn.com/imgextra/i3/6000000005177/O1CN01HPrf8r1o77FBpIXd5_!!6000000005177-0-hotel.jpg",
+          "note": "龙海风情小镇L9-9号",
+          "unit": "列表起价；每晚口径按官方文档推算，指定房型/人数/三晚成交价待核验"
+        },
+        {
+          "name": "莫言莫语设计师酒店(三亚亚龙湾博后店)",
+          "price": "¥149",
+          "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F14Rvxj",
+          "image": "https://img.alicdn.com/imgextra/i2/6000000003416/O1CN01uOGj5v1b6ZrT7Y4Sc_!!6000000003416-0-hotel.jpg",
+          "note": "亚龙湾博后村委会新坡三组15号",
+          "unit": "列表起价；每晚口径按官方文档推算，指定房型/人数/三晚成交价待核验"
+        }
+      ],
+      "selected": {
+        "name": "摩卡时光海景度假公寓(三亚湾椰梦长廊店)",
+        "price": "¥140",
+        "url": "https://router.feizhu.com/multi/webview?url=https%3A%2F%2Frouter.feizhu.com%2Fws%2F41rEUJ",
+        "image": "https://img.alicdn.com/imgextra/i3/6000000005796/O1CN01awkNxE1sgcgWjAsgw_!!6000000005796-2-hotel.png",
+        "note": "三亚湾蓝色海岸小区（兰海三期）-，近机场路。",
+        "unit": "列表起价；每晚口径按官方文档推算，指定房型/人数/三晚成交价待核验"
+      },
+      "platformHint": null,
+      "error": null
+    }
+  },
+  "ledger": [
+    {
+      "label": "去程",
+      "unitPrice": "929.00",
+      "quantity": 2,
+      "amount": "1858.00",
+      "status": "列表价推算"
+    },
+    {
+      "label": "返程",
+      "unitPrice": "500.00",
+      "quantity": 2,
+      "amount": "1000.00",
+      "status": "列表价推算"
+    },
+    {
+      "label": "住宿",
+      "unitPrice": "140",
+      "quantity": 3,
+      "amount": "420",
+      "status": "列表价推算"
+    }
+  ],
+  "knownListSubtotal": "3278.00",
+  "estimateTotal": "2700",
+  "referenceTotal": "5978.00",
+  "budget": "8000",
+  "unknown": [
+    "航班税费与行李",
+    "两人同价库存",
+    "酒店指定房型、入住人数、税费及三晚成交价",
+    "去程 ticketPrice 的单人及人民币口径",
+    "返程 ticketPrice 的单人及人民币口径"
+  ],
+  "conclusion": "预算尚待核验；列表价和估算不构成成交保证",
+  "source": "飞猪官方FlyAI CLI，原始响应见同目录JSON"
+}

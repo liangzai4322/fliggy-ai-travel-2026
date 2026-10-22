@@ -1,0 +1,25 @@
+{
+  "origin": "上海",
+  "destination": "三亚",
+  "departure": "2026-11-07",
+  "return": "2026-11-10",
+  "adults": 2,
+  "rooms": 1,
+  "budget": 8000,
+  "hotelMaxNight": 900,
+  "preferences": "直飞优先，海边散步，轻松行程",
+  "estimates": {
+    "food": 1200,
+    "localTransport": 400,
+    "activities": 300,
+    "reserve": 800
+  },
+  "hotelStars": "4,5",
+  "hotelSort": "price_asc",
+  "selection": {
+    "outbound": "MU5377",
+    "return": "HO1130",
+    "hotel": "摩卡时光海景度假公寓(三亚湾椰梦长廊店)"
+  },
+  "aiReportUrl": "https://github.com/liangzai4322/fliggy-ai-travel-2026/blob/main/demo/demo-report.md"
+}
